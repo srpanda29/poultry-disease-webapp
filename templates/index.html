@@ -1,19 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Poultry Disease Detection</title>
+    <title>Poultry Disease Detector</title>
 </head>
 <body>
     <h1>Poultry Disease Detection</h1>
-    <form method="POST" enctype="multipart/form-data">
-        <label>Upload Chicken Image:</label><br>
-        <input type="file" name="image" required><br><br>
-        <input type="submit" value="Predict">
+    <form action="/predict" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" accept="image/*" required>
+        <br><br>
+        <input type="submit" value="Upload and Predict">
     </form>
-
-    {% if prediction %}
-        <h2>Prediction: {{ prediction }}</h2>
-        <img src="{{ image_url }}" width="300px">
-    {% endif %}
 </body>
 </html>
