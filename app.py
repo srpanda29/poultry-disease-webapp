@@ -1,7 +1,11 @@
-from flask import Flask
+from flask import Flask, render_template, request
+import os
 
 app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return "Poultry Disease Web App is running!"
+    return render_template('index.html', temperature=28, humidity=65, ammonia=15, status="Healthy")
+
+if __name__ == '__main__':
+    app.run(debug=True)
