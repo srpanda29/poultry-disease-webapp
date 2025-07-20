@@ -1,13 +1,15 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Poultry Dashboard</title>
-</head>
-<body>
-    <h1>Status</h1>
-    <p>Temperature: {{ temperature }} °C</p>
-    <p>Humidity: {{ humidity }} %</p>
-    <p>Ammonia: {{ ammonia }} ppm</p>
-    <p>Status: {{ status }}</p>
-</body>
-</html>
+body {
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+}
+
+p {
+  font-size: 18px;
+}
+
