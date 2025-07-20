@@ -2,5 +2,6 @@ services:
   - type: web
     name: poultry-disease-webapp
     runtime: python
+    env: python
     buildCommand: ""
     startCommand: gunicorn app:app
